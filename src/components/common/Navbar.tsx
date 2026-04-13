@@ -60,7 +60,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 flex-shrink-0 group">
-              <img src="/logo-icon.png" alt="ResumeForge — Free Resume Builder" style={{ height: '38px', width: 'auto' }} className="group-hover:opacity-90 transition-opacity" />
+              <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="ResumeForge — Free Resume Builder" style={{ height: '38px', width: 'auto' }} className="group-hover:opacity-90 transition-opacity" />
               <span className="font-extrabold text-forge-900 text-[17px] tracking-tight">ResumeForge</span>
             </Link>
 

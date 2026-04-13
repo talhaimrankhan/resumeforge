@@ -70,7 +70,7 @@ export default function AuthModal({ onClose }: AuthModalProps) {
             </svg>
           </button>
           <div className="flex flex-col items-center gap-4">
-            <img src="/logo-icon.png" alt="ResumeForge" style={{ height: '61px', width: 'auto' }} className="brightness-0 invert" />
+            <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="ResumeForge" style={{ height: '61px', width: 'auto' }} className="brightness-0 invert" />
             <p className="text-white/80 text-lg font-semibold">
               {tab === 'signup' ? 'Create your free account' : tab === 'magic' ? 'Sign in with a magic link' : 'Welcome back'}
             </p>

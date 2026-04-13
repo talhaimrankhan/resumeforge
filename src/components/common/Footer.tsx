@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <img
-              src="/logo-icon.png"
+              src={`${import.meta.env.BASE_URL}logo-icon.png`}
               alt="ResumeForge logo"
               style={{ height: '34px', width: 'auto' }}
               className="brightness-0 invert opacity-80"

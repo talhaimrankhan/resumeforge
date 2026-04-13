@@ -55,7 +55,7 @@ export default function WizardLayout({ children }: { children: React.ReactNode }
             </svg>
           </button>
           <div className="hidden sm:flex items-center gap-2">
-            <img src="/logo-icon.png" alt="ResumeForge" style={{ height: '32px', width: 'auto' }} />
+            <img src={`${import.meta.env.BASE_URL}logo-icon.png`} alt="ResumeForge" style={{ height: '32px', width: 'auto' }} />
             <span className="font-extrabold text-forge-900 text-[15px] tracking-tight">ResumeForge</span>
           </div>
         </div>
