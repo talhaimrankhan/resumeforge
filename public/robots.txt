@@ -2,10 +2,10 @@ User-agent: *
 Allow: /
 
 # Block authenticated-only pages — no SEO value, no crawl budget waste
-Disallow: /dashboard
-Disallow: /resume/
-Disallow: /templates
-Disallow: /settings
+Disallow: /resumeforge/dashboard
+Disallow: /resumeforge/resume/
+Disallow: /resumeforge/templates
+Disallow: /resumeforge/settings
 
 # Sitemap location
-Sitemap: https://resumeforge.app/sitemap.xml
+Sitemap: https://talhaimrankhan.github.io/resumeforge/sitemap.xml

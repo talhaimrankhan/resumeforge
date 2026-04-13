@@ -14,7 +14,7 @@ import SettingsPage from './pages/SettingsPage'
 export default function App() {
   return (
     <ErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename="/resumeforge">
         <AuthProvider>
           <Toaster
             position="top-right"
