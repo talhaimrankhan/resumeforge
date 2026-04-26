@@ -61,28 +61,31 @@ export default function WizardLayout({ children }: { children: React.ReactNode }
         </div>
 
         {/* Progress bar */}
-        <div className="flex-1 max-w-xs mx-4">
+        <div className="flex-1 max-w-xs mx-2 sm:mx-4">
           <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
             <div
               className="h-full bg-forge-600 rounded-full transition-all duration-500"
               style={{ width: `${progress}%` }}
             />
           </div>
-          <div className="text-xs text-gray-400 text-center mt-0.5">Step {currentIdx + 1} of {steps.length}</div>
+          <div className="text-xs text-gray-400 text-center mt-0.5">{currentIdx + 1} / {steps.length}</div>
         </div>
 
         {/* Save status */}
-        <div className="flex items-center gap-2 text-xs text-gray-400">
+        <div className="flex items-center gap-1.5 text-xs text-gray-400">
           {saving ? (
-            <><LoadingSpinner size="sm" /><span>Saving…</span></>
+            <LoadingSpinner size="sm" />
           ) : isDirty ? (
-            <span className="text-amber-500">Unsaved</span>
+            <span className="text-amber-500">●</span>
           ) : (
-            <span className="text-green-500">✓ Saved</span>
+            <span className="text-green-500">✓</span>
           )}
+          <span className="hidden sm:inline">
+            {saving ? 'Saving…' : isDirty ? 'Unsaved' : 'Saved'}
+          </span>
           <button
             onClick={() => navigate(`/resume/${resumeId}/preview`)}
-            className="ml-2 bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+            className="ml-1 bg-gray-100 hover:bg-gray-200 text-gray-700 text-xs font-semibold px-2.5 py-1.5 rounded-lg transition-colors"
           >
             Preview
           </button>

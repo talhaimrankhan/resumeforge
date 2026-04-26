@@ -100,14 +100,14 @@ export default function TemplateSelectorPage() {
         </div>
 
         {/* Tier tabs */}
-        <div className="flex gap-1 bg-white rounded-xl border border-gray-100 p-1 mb-8 w-fit">
+        <div className="flex gap-1 bg-white rounded-xl border border-gray-100 p-1 mb-8 w-full sm:w-fit">
           {tabs.map(tab => {
             const meta = CATEGORY_META[tab]
             return (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+                className={`flex flex-1 sm:flex-none items-center justify-center gap-2 px-3 sm:px-5 py-2.5 rounded-lg text-sm font-semibold transition-all ${
                   activeTab === tab
                     ? 'bg-forge-600 text-white shadow-sm'
                     : 'text-gray-500 hover:text-forge-600'

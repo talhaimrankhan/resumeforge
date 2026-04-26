@@ -46,14 +46,14 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight tracking-tight mb-6">
           Free Resume Builder{' '}
           <span className="relative inline-block">
             <span className="text-gradient-forge">&amp; CV Maker</span>
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-base sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
           Build a professional, ATS-ready resume in minutes. Choose from 30 templates across 3 tiers,
           fill in a guided wizard, and download as PDF or PNG — free to start, no subscription needed.
         </p>

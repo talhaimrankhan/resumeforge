@@ -57,7 +57,7 @@ export default function Features() {
           <div className="inline-flex items-center gap-2 bg-forge-50 text-forge-600 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
             Everything you need
           </div>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-forge-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-forge-900 tracking-tight mb-4">
             Resume builder features for every career stage
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">

@@ -31,9 +31,9 @@ export default function DashboardPage() {
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
-            <h1 className="text-3xl font-extrabold text-forge-900 tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-forge-900 tracking-tight">
               Hey, {firstName} 👋
             </h1>
             <p className="text-gray-400 text-sm mt-1">
@@ -44,7 +44,7 @@ export default function DashboardPage() {
           </div>
           <button
             onClick={() => navigate('/templates')}
-            className="flex items-center gap-2 bg-forge-600 hover:bg-forge-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors"
+            className="flex items-center gap-2 bg-forge-600 hover:bg-forge-700 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors self-start sm:self-auto"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />

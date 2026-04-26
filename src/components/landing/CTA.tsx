@@ -21,7 +21,7 @@ export default function CTA() {
         <div className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 rounded-full px-4 py-1.5 text-sm font-semibold mb-6">
           ⚡ Start for free, upgrade anytime
         </div>
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+        <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
           Your dream resume is<br />
           <span className="text-gradient-forge">one wizard away</span>
         </h2>
