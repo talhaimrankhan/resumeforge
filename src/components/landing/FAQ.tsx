@@ -58,16 +58,16 @@ export default function FAQ() {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <section id="faq" className="py-24 bg-white">
+      <section id="faq" className="py-16 sm:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <div className="inline-flex items-center gap-2 bg-forge-50 text-forge-600 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
               Got questions?
             </div>
             <h2 className="text-3xl sm:text-5xl font-extrabold text-forge-900 tracking-tight mb-4">
               Frequently asked questions
             </h2>
-            <p className="text-lg text-gray-500 max-w-xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto">
               Everything you need to know about building your resume with ResumeForge.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function FAQ() {
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : i)}
-                    className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                    className="w-full flex items-center justify-between gap-3 px-4 sm:px-6 py-4 sm:py-5 text-left"
                     aria-expanded={isOpen}
                   >
                     <span className="text-base font-semibold text-forge-900">{faq.question}</span>
@@ -98,7 +98,7 @@ export default function FAQ() {
                     </span>
                   </button>
                   {isOpen && (
-                    <div className="px-6 pb-5">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-5">
                       <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
                     </div>
                   )}

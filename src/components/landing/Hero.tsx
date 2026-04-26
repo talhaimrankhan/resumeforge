@@ -11,7 +11,7 @@ export default function Hero() {
   }
 
   return (
-    <section aria-label="Hero — Free Resume Builder" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-forge-950">
+    <section aria-label="Hero — Free Resume Builder" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-forge-950 pt-16">
       {/* Animated gradient background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-forge-950 via-forge-900 to-purple-950" />
@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
+        <div className="mt-10 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto">
           {[
             { icon: '🎨', value: '30',        label: 'Templates', valueClass: 'text-forge-300',  iconClass: '' },
             { icon: '✦',  value: '3',         label: 'Tiers',     valueClass: 'text-purple-300', iconClass: 'text-purple-300' },

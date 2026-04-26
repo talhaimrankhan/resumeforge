@@ -71,21 +71,21 @@ export default function TemplatePreviews() {
   }
 
   return (
-    <section id="templates" aria-label="Resume Templates" className="py-24 bg-gray-50">
+    <section id="templates" aria-label="Resume Templates" className="py-16 sm:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-forge-50 text-forge-600 rounded-full px-4 py-1.5 text-sm font-semibold mb-4">
             30 professional resume templates
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-forge-900 tracking-tight mb-4">
             Free &amp; premium resume templates for every ambition
           </h2>
-          <p className="text-lg text-gray-500 max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto">
             Every tier starts with 3 free resume templates. Unlock premium designs when you're ready to level up.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {tiers.map(tier => (
             <div key={tier.id} className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group">
               {/* Real template preview */}

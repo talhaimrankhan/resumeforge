@@ -11,25 +11,25 @@ export default function CTA() {
   }
 
   return (
-    <section id="pricing" aria-label="Pricing — Free Resume Builder" className="py-24 bg-forge-950 relative overflow-hidden">
+    <section id="pricing" aria-label="Pricing — Free Resume Builder" className="py-16 sm:py-24 bg-forge-950 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-forge-600/20 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-purple-600/15 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <div className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 rounded-full px-4 py-1.5 text-sm font-semibold mb-6">
+        <div className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 rounded-full px-4 py-1.5 text-sm font-semibold mb-4 sm:mb-6">
           ⚡ Start for free, upgrade anytime
         </div>
         <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
           Your dream resume is<br />
           <span className="text-gradient-forge">one wizard away</span>
         </h2>
-        <p className="text-lg text-white/50 max-w-xl mx-auto mb-10">
+        <p className="text-base sm:text-lg text-white/50 max-w-xl mx-auto mb-8 sm:mb-10">
           No subscriptions. No hidden fees. Pick a free template, fill in the wizard, and download — it's that simple. Unlock premium templates whenever you're ready.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 sm:mb-12">
           <button
             onClick={handleStart}
             className="group bg-forge-600 hover:bg-forge-500 text-white font-bold px-10 py-4 rounded-xl text-base transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-forge-600/30"
